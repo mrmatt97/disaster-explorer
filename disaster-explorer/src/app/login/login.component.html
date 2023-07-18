@@ -1,0 +1,32 @@
+<header>
+  <div class="logo">
+    NATURAL-DISASTER-EXPLORER
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">LOGIN</a></li>
+      <li><a href="/create-account">CREATE ACCOUNT</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="content">
+
+  <p>  Login to your account</p>
+
+  <form>
+
+    <span *ngIf="error">{{ error }}</span>
+
+    <label>Email Address</label>
+    <input type="text" name="email" [(ngModel)]="email" placeholder="email..">
+
+    <label>Password</label>
+
+    <input type="password" name="password" [(ngModel)]="password"  placeholder="password...">
+
+    <button (click)="login()">LOGIN</button>
+
+  </form>
+
+</div>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DisasterExplorer</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.tutorialjinni.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdn.tutorialjinni.com/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="//g.tutorialjinni.com/mojoaxel/bootstrap-select-country/dist/css/bootstrap-select-country.min.css" />
+
+
+
+  <script async
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4PShIJ03WfYvcEdKmnASW0_U0U60gQ-0&callback=initMap">
+  </script>
+  <style>
+    /* Basic styling for the interface */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #2a9b2a;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      padding:0px 15px;
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 20px;
+    }
+
+
+
+    .main{
+      box-shadow: rgb(206, 206, 206) 0px 54px 55px, rgb(206, 206, 206) 0px -12px 30px, rgb(206, 206, 206) 0px 4px 6px, rgb(206, 206, 206) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      background: #eee;
+      width: 90%;
+      border: 1px solid #cecece;
+      margin: auto;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 120px;
+      text-align: center;
+    }
+
+    .main input{
+      width: 60%;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      border:1px solid #cecece;
+      background: #eee;
+    }
+
+    .main .results{
+      margin: auto;
+      width: 50%;
+    }
+
+    .main .suggestions p{
+      color:dodgerblue;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .main .suggestions ul{
+      text-align: left;
+      width: 100%;
+      list-style: none;
+    }
+
+    .main .suggestions ul li{
+      margin: 0px;
+      padding: 10px;
+      border-bottom: 1px solid #cecece;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
+
+    .main .suggestions ul li:hover{
+      background: #eeeeee;
+    }
+
+    .main .suggestions ul li a{
+      color:#4a4a4a;
+      text-decoration: none;
+    }
+
+
+    nav ul {
+      list-style-type: none;
+      margin: 20px;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 10px;
+    }
+
+    nav ul li a {
+      padding:15px 25px;
+      color: #fff;
+      font-weight: bold;
+      font-family: 'Public Sans', sans-serif;
+      font-size: 14px;
+      border-radius: 4px;
+      background: #1b691b;
+
+    }
+
+    nav ul li a:hover{
+      background: #fff;
+      color: #1b691b;
+      text-decoration: none;
+      transition: background-color 0.5s;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+<app-root>
+</app-root>
+<script src="//cdn.tutorialjinni.com/jquery/3.6.1/jquery.min.js"></script>
+<script src="//cdn.tutorialjinni.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//cdn.tutorialjinni.com/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+<script src="//g.tutorialjinni.com/mojoaxel/bootstrap-select-country/dist/js/bootstrap-select-country.min.js"></script>
+</body>
+</html>
