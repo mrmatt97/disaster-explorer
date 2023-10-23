@@ -16,7 +16,7 @@ class DisasterController extends Controller
 
         // Make a GET request to the PredictHQ API
         $response = Http::withHeaders([
-            'Authorization' => 'Bearer FalIjpbcpjKKqRA5G0cJsYx5DR_uKMOkMbf5Rlgv',
+            'Authorization' => 'Bearer 2NydF2se76W5iEz5E9z-uLcXo9L-fgBGfnZB9D7x',
             'Accept' => 'application/json',
         ])->get('https://api.predicthq.com/v1/events/', [
             'category' => 'disasters',
